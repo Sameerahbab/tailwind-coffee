@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+
+    .btn{
+        @apply px-9 py-3 rounded-lg text-xl font-bold ease-in duration-150;
+    }
+}

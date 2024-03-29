@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <header class=" top-0 left-0 w-full z-10 bg-brown fixed pb-6 pt-6 shadow-md shadow-primary-color" id="header">
+
+        <nav class="container relative flex flex-cols justify-between items-center h-20 ">
+
+            <div class="text-primary-color text-3xl font-extrabold md:text-4xl lg:text-5xl">
+
+                <h1>Lo<span class="text-yellow-500">go</span></h1>
+            </div>
+
+            <!-- Mobile screen -->
+            <div class="hidden absolute top-0 left-0 w-full border-b border-primary-color bg-brown md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto ">
+
+                <ul class="flex flex-col text-center gap-8 md:flex-row " id="nav-menu">
+
+                    <li>
+                        <a href="#home" class="nav__link text-2xl text-primary-color font-bold capitalize cursor-pointer hover:text-yellow-500 hover:border-b hover:border-yellow-500 ease-in duration-150">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="nav__link text-2xl text-primary-color font-bold capitalize cursor-pointer hover:text-yellow-500 hover:border-b hover:border-yellow-500 ease-in duration-150">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#menu" class=" text-2xl text-primary-color font-bold capitalize cursor-pointer hover:text-yellow-500 hover:border-b hover:border-yellow-500 ease-in duration-150">Menu</a>
+                    </li>
+
+                    <li>
+                        <a href="#gallery" class="nav__link text-2xl text-primary-color font-bold capitalize cursor-pointer hover:text-yellow-500 hover:border-b hover:border-yellow-500 ease-in duration-150">Pastries</a>
+                    </li>
+
+                    <li>
+                        <a href="#order" class="nav__link text-2xl text-primary-color font-bold capitalize cursor-pointer hover:text-yellow-500 hover:border-b hover:border-yellow-500 ease-in duration-150">Order</a>
+                    </li>
+
+                    <li>
+                        <button class="btn bg-primary-color  hover:bg-yellow-500 hover:text-white">Visit Us</button>
+                    </li>
+
+                    <div class="md:hidden" id="nav-close">
+                        <i class="ri-close-line text-2xl text-primary-color-light hover:text-yellow-500 cursor-pointer duration-150"></i>
+                    </div>
+                </ul>
+            </div>
+
+            <div id="hamburger" class="md:hidden">
+
+                <i class="ri-menu-2-line text-2xl text-primary-color-light hover:text-yellow-500 cursor-pointer duration-150"></i>
+            </div>
+
+        </nav>       
+    </header>
+
+    <main>
+
+        <section class="bg-image bg-cover bg-center h-screen flex justify-center items-center" style="background-image: url('images/coffee-splash.jpg');" id="home">
+
+            <div class="container text-center">
+    
+                <h1 class="text-white text-3xl md:text-5xl lg:text-8xl capitalize font-bold text-center">Taste our blends of superior coffee</h1>
+    
+                <div class="mt-4 md:mt-12 flex items-center justify-center space-x-4">
+    
+                    <input type="text" class="py-3 text-black ring-2 ring-black rounded-lg focus:outline-none w-3/5 focus:ring-4 focus:ring-primary-color" placeholder="Querries Here">
+    
+                    <button class="btn bg-gradient-to-r from-primary-color-dark to-primary-color-light text-white">Visit Us</button>
+    
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-image bg-cover  bg-center h-full pb-8" style="background-image: url('/images/coffee-back.jpg');" id="about">
+
+            <div class="container">
+    
+                <h1 class="text-4xl md:text-5xl lg:text-6xl text-yellow-500 w-full font-bold pt-8 text-center capitalize font-serif ">Our <span class="text-white font-serif">blends</span></h1>
+    
+                <div class="mt-6 flex flex-col items-center gap-16 md:flex-row md:basis-1/2">
+    
+                    <div class="text-center md:text-left md:w-1/2">
+    
+                        <h2 class="text-4xl md:text-5xl lg:text-6xl text-yellow-500 w-full font-bold pt-8 text-center capitalize font-serif md:text-left md:pr-10 ">authenticity guranteed with every sip</h2>
+    
+                        <p class="text-primary-color text-xl mt-4 font-bold font-serif">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, soluta dignissimos nulla at quasi iusto, dolorum enim recusandae perferendis aliquid commodi omnis provident unde doloribus eius? Labore quas quis consequatur id quasi perferendis voluptas, veritatis eveniet consequuntur ex quia aspernatur debitis autem ipsam reprehenderit excepturi modi esse aperiam voluptate cupiditate!</p>
+                    </div>
+    
+                    <div class="text-center grid md:grid-cols-2 gap-10">
+    
+                        <div class="mt-4 transition-transform transform hover:scale-110 duration-200">
+    
+                            <img src="images/blend.webp" alt="" class="w-auto rounded-full ring-4 ring-primary-color bg-black ">
+                            <button class=" btn mt-4 bg-primary-color text-black capitalize hover:bg-brown hover:text-white duration-150">Try it</button>
+                        </div>
+    
+                        <div class="mt-4 transition-transform transform hover:scale-110 duration-200">
+                            <img src="images/blend-2.webp" alt="" class="w-auto rounded-full ring-4 ring-primary-color bg-black">
+                            <button class=" btn mt-4 bg-primary-color text-black capitalize hover:bg-brown hover:text-white duration-150">Try it</button>
+                        </div>
+    
+                        <div class="mt-4 transition-transform transform hover:scale-110 duration-200">
+                            <img src="images/blend-2.webp" alt="" class="w-auto rounded-full ring-4 ring-primary-color bg-black">
+                            <button class=" btn mt-4 bg-primary-color text-black capitalize hover:bg-brown hover:text-white duration-150">Try it</button>
+                        </div>
+    
+                        <div class="mt-4 transition-transform transform hover:scale-110 duration-200">
+                            <img src="images/blend-3.webp" alt="" class="w-auto rounded-full ring-4 ring-primary-color bg-black">
+                            <button class=" btn mt-4 bg-primary-color text-black capitalize hover:bg-brown hover:text-white duration-150">Try it</button>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- MENU-CARDS -->
+    
+        <section class="bg-black-in bg-cover bg-center h-full pb-4" id="menu" >
+    
+            <h1 class="pt-4 text-white text-center font-bold text-4xl md:text-5xl lg:text-6xl font-serif">Our <span class="text-yellow-500">Menu</span></h1>
+    
+            <div class="container mt-6 grid gap-10 md:grid-cols-2 lg:grid-cols-4 mb-4">
+    
+                <div class="mt-4 flex flex-col items-center border-8 border-primary-color p-6 rounded-3xl bg-brown hover:bg-black hover:border-yellow-500 transition-transform duration-150 transform hover:scale-110">
+                    <div class="pt-4">
+                        <img src="images/affogato-1.webp" class="w-auto rounded-full ring-2 ring-primary-color-light bg-black" alt="">
+                    </div>
+                    <div class="text-white text-center mt-4 space-y-2">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold font-serif">Afforgato</h2>
+                        <p class="text-lg md:text-xl lg:text-2xl font-bold font-serif capitalize">280 taka</p>
+                        <button class="btn bg-primary-color hover:bg-yellow-500">Buy</button>
+                    </div>
+                </div>
+    
+                <div class="mt-4 flex flex-col items-center border-8 border-primary-color p-6 rounded-3xl bg-brown hover:bg-black hover:border-yellow-500 transition-transform duration-150 transform hover:scale-110">
+                    <div class="pt-4">
+                        <img src="images/Affogato-2.webp" class="w-auto rounded-full ring-2 ring-primary-color-light bg-black" alt="">
+                    </div>
+                    <div class="text-white text-center mt-4 space-y-2">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold font-serif">Afforgato</h2>
+                        <p class="text-lg md:text-xl lg:text-2xl font-bold font-serif capitalize">280 taka</p>
+                        <button class="btn bg-primary-color hover:bg-yellow-500">Buy</button>
+                    </div>
+                </div>
+    
+                <div class="mt-4 flex flex-col items-center border-8 border-primary-color p-6 rounded-3xl bg-brown hover:bg-black hover:border-yellow-500 transition-transform duration-150 transform hover:scale-110">
+                    <div class="pt-4">
+                        <img src="images/Affogato-3.webp" class="w-auto rounded-full ring-2 ring-primary-color-light bg-black" alt="">
+                    </div>
+                    <div class="text-white text-center mt-4 space-y-2">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold font-serif">Afforgato</h2>
+                        <p class="text-lg md:text-xl lg:text-2xl font-bold font-serif capitalize">280 taka</p>
+                        <button class="btn bg-primary-color hover:bg-yellow-500">Buy</button>
+                    </div>
+                </div>
+    
+                <div class="mt-4 flex flex-col items-center border-8 border-primary-color p-6 rounded-3xl bg-brown hover:bg-black hover:border-yellow-500 transition-transform duration-150 transform hover:scale-110">
+                    <div class="pt-4">
+                        <img src="images/Affogato-4.webp" class="w-auto rounded-full ring-2 ring-primary-color-light bg-black" alt="">
+                    </div>
+                    <div class="text-white text-center mt-4 space-y-2">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold font-serif">Afforgato</h2>
+                        <p class="text-lg md:text-xl lg:text-2xl font-bold font-serif capitalize">280 taka</p>
+                        <button class="btn bg-primary-color hover:bg-yellow-500">Buy</button>
+                    </div>
+                </div>
+    
+                <div class="mt-4 flex flex-col items-center border-8 border-primary-color p-6 rounded-3xl bg-brown hover:bg-black hover:border-yellow-500 transition-transform duration-150 transform hover:scale-110">
+                    <div class="pt-4">
+                        <img src="images/americano.jpg" class="w-auto rounded-full ring-2 ring-primary-color-light bg-black" alt="">
+                    </div>
+                    <div class="text-white text-center mt-4 space-y-2">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold font-serif">Americano</h2>
+                        <p class="text-lg md:text-xl lg:text-2xl font-bold font-serif capitalize">280 taka</p>
+                        <button class="btn bg-primary-color hover:bg-yellow-500">Buy</button>
+                    </div>
+                </div>
+    
+                <div class="mt-4 flex flex-col items-center border-8 border-primary-color p-6 rounded-3xl bg-brown hover:bg-black hover:border-yellow-500 transition-transform duration-150 transform hover:scale-110">
+                    <div class="pt-4">
+                        <img src="images/cappucino.webp" class="w-auto rounded-full ring-2 ring-primary-color-light bg-black" alt="">
+                    </div>
+                    <div class="text-white text-center mt-4 space-y-2">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold font-serif">Cappucino</h2>
+                        <p class="text-lg md:text-xl lg:text-2xl font-bold font-serif capitalize">280 taka</p>
+                        <button class="btn bg-primary-color hover:bg-yellow-500">Buy</button>
+                    </div>
+                </div>
+    
+    
+                <div class="mt-4 flex flex-col items-center border-8 border-primary-color p-6 rounded-3xl bg-brown hover:bg-black hover:border-yellow-500 transition-transform duration-150 transform hover:scale-110">
+                    <div class="pt-4">
+                        <img src="images/black-coffee1.jpg" class="w-auto rounded-full ring-2 ring-primary-color-light bg-black" alt="">
+                    </div>
+                    <div class="text-white text-center mt-4 space-y-2">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold font-serif">Black</h2>
+                        <p class="text-lg md:text-xl lg:text-2xl font-bold font-serif capitalize">280 taka</p>
+                        <button class="btn bg-primary-color hover:bg-yellow-500">Buy</button>
+                    </div>
+                </div>
+    
+                <div class="mt-4 flex flex-col items-center border-8 border-primary-color p-6 rounded-3xl bg-brown hover:bg-black hover:border-yellow-500 transition-transform duration-150 transform hover:scale-110">
+                    <div class="pt-4">
+                        <img src="images/cffe-mocha.jpg" class="w-auto rounded-full ring-2 ring-primary-color-light bg-black" alt="">
+                    </div>
+                    <div class="text-white text-center mt-4 space-y-2">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold font-serif">Mocha</h2>
+                        <p class="text-lg md:text-xl lg:text-2xl font-bold font-serif capitalize">280 taka</p>
+                        <button class="btn bg-primary-color hover:bg-yellow-500">Buy</button>
+                    </div>
+                </div>
+    
+                <div class="mt-4 flex flex-col items-center border-8 border-primary-color p-6 rounded-3xl bg-brown hover:bg-black hover:border-yellow-500 transition-transform duration-150 transform hover:scale-110">
+                    <div class="pt-4">
+                        <img src="images/esperesso.jpg" class="w-auto rounded-full ring-2 ring-primary-color-light bg-black" alt="">
+                    </div>
+                    <div class="text-white text-center mt-4 space-y-2">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold font-serif">Esperesso</h2>
+                        <p class="text-lg md:text-xl lg:text-2xl font-bold font-serif capitalize">280 taka</p>
+                        <button class="btn bg-primary-color hover:bg-yellow-500">Buy</button>
+                    </div>
+                </div>
+    
+                <div class="mt-4 flex flex-col items-center border-8 border-primary-color p-6 rounded-3xl bg-brown hover:bg-black hover:border-yellow-500 transition-transform duration-150 transform hover:scale-110">
+                    <div class="pt-4">
+                        <img src="images/macchiato.jpg" class="w-auto rounded-full ring-2 ring-primary-color-light bg-black" alt="">
+                    </div>
+                    <div class="text-white text-center mt-4 space-y-2">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold font-serif">Macchiato</h2>
+                        <p class="text-lg md:text-xl lg:text-2xl font-bold font-serif capitalize">280 taka</p>
+                        <button class="btn bg-primary-color hover:bg-yellow-500">Buy</button>
+                    </div>
+                </div>
+    
+                <div class="mt-4 flex flex-col items-center border-8 border-primary-color p-6 rounded-3xl bg-brown hover:bg-black hover:border-yellow-500 transition-transform duration-150 transform hover:scale-110">
+                    <div class="pt-4">
+                        <img src="images/latte.jpg" class="w-auto rounded-full ring-2 ring-primary-color-light bg-black" alt="">
+                    </div>
+                    <div class="text-white text-center mt-4 space-y-2">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold font-serif">Latte</h2>
+                        <p class="text-lg md:text-xl lg:text-2xl font-bold font-serif capitalize">280 taka</p>
+                        <button class="btn bg-primary-color hover:bg-yellow-500">Buy</button>
+                    </div>
+                </div>
+    
+                <div class="mt-4 flex flex-col items-center border-8 border-primary-color p-6 rounded-3xl bg-brown hover:bg-black hover:border-yellow-500 transition-transform duration-150 transform hover:scale-110">
+                    <div class="pt-4">
+                        <img src="images/latte.jpg" class="w-auto rounded-full ring-2 ring-primary-color-light bg-black" alt="">
+                    </div>
+                    <div class="text-white text-center mt-4 space-y-2">
+                        <h2 class="text-lg md:text-xl lg:text-2xl font-bold font-serif">Latte</h2>
+                        <p class="text-lg md:text-xl lg:text-2xl font-bold font-serif capitalize">280 taka</p>
+                        <button class="btn bg-primary-color hover:bg-yellow-500">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Pastries -->
+    
+        <section class="bg-black-in h-auto pb-4" id="gallery" >
+            <h1 class="pt-4 pb-6 text-white text-center font-bold text-4xl md:text-5xl lg:text-6xl font-serif capitalize">past<span class="text-yellow-500">ries</span>
+            </h1>
+    
+            <div class="container grid gap-5 md:grid-cols-2 items-center mt-4 pb-4">
+                <div class="relative">
+                    <img src="images/pastry-1.jpg" class="w-full h-auto rounded-xl" alt="" width="700">
+                    <div class="absolute inset-0 flex flex-col text-center place-items-center justify-center opacity-0 hover:opacity-100 duration-200 bg-black-in bg-opacity-50 text-white rounded-xl">
+                        <h2 class="text-2xl text-yellow-500">pastries</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, omnis!</p>
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <img src="images/pastry-2.jpg" class="w-full h-auto rounded-xl" alt="" width="700">
+                    <div class="absolute inset-0 flex flex-col text-center items-center justify-center opacity-0 hover:opacity-100 duration-200 bg-black-in bg-opacity-50 text-white rounded-xl">
+                        <h2 class="text-2xl text-yellow-500">pastries</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, omnis!</p>
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <img src="images/pastry-3.jpg" class="w-full h-auto rounded-xl" alt="" width="700">
+                    <div class="absolute inset-0 flex flex-col text-center items-center justify-center opacity-0 hover:opacity-100 duration-200 bg-black-in bg-opacity-50 text-white rounded-xl">
+                        <h2 class="text-2xl text-yellow-500">pastries</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, omnis!</p>
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <img src="images/pastry-4.jpg" class="w-full h-auto rounded-xl" alt="" width="700">
+                    <div class="absolute inset-0 flex flex-col text-center items-center justify-center opacity-0 hover:opacity-100 duration-200 bg-black-in bg-opacity-50 text-white rounded-xl">
+                        <h2 class="text-2xl text-yellow-500">pastries</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, omnis!</p>
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <img src="images/pastry-5.jpg" class="w-full h-auto rounded-xl" alt="" width="700">
+                    <div class="absolute inset-0 flex flex-col text-center items-center justify-center opacity-0 hover:opacity-100 duration-200 bg-black-in bg-opacity-50 text-white rounded-xl">
+                        <h2 class="text-2xl text-yellow-500">pastries</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, omnis!</p>
+                    </div>
+                </div>
+    
+                <div class="relative">
+                    <img src="images/pastry-6.jpg" class="w-full h-auto rounded-xl" alt="" width="700">
+                    <div class="absolute inset-0 flex flex-col text-center items-center justify-center opacity-0 hover:opacity-100 duration-200 bg-black-in bg-opacity-50 text-white rounded-xl">
+                        <h2 class="text-2xl text-yellow-500">pastries</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, omnis!</p>
+                    </div>
+                </div>            
+            </div>            
+        </section >
+    
+            <!-- ORDER-NOW -->
+    
+        
+        <section class="bg-image bg-cover h-auto bg-center pt-10" id="order" style="background-image: url('images/orderbg.jpg');">
+            <h1 class="text-center font-bold text-2xl md:text-4xl lg:text-5xl capitalize font-serif">place <span class="text-yellow-500">Order</span></h1>
+            <div class="container mx-auto py-8 grid gap-10 md:grid-cols-2">
+                <div class="border-4 border-yellow-500 p-4 rounded-xl bg-black-in">
+    
+                    <form action="">
+                        <h2 class="text-center text-white font-bold text-xl md:text-2xl lg:text-3xl capitalize font-serif"><span class="text-yellow-500">place your</span> order</h2>
+    
+                        <div>
+                            <label for="email" class="block text-yellow-500 font-semibold text-lg">Email</label>
+                            <input type="text" class="w-full p-1 border-2 border-primary-color rounded-lg mt-1 focus:ring-2 focus:ring-yellow-500 focus:outline-none" placeholder="Email">
+                        </div>
+    
+                        <div>
+                            <label for="name" class="block text-yellow-500 font-semibold text-lg">Name</label>
+                            <input type="text" class="w-full p-1 border-2 border-primary-color rounded-lg mt-1 focus:ring-2 focus:ring-yellow-500 focus:outline-none" placeholder="Enter name">
+                        </div>
+    
+                        <div>
+                            <label for="address" class="block text-yellow-500 font-semibold text-lg">Address</label>
+                            <input type="text" class="w-full p-1 border-2 border-primary-color rounded-lg mt-1 focus:ring-2 focus:ring-yellow-500 focus:outline-none" placeholder="Enter Address">
+                        </div>
+    
+                        <div>
+    
+                            <label for="number" class="block text-yellow-500 font-semibold text-lg">Amount</label>
+                            <input type="text" class="w-full p-1 border-2 border-primary-color rounded-lg mt-1 focus:ring-2 focus:ring-yellow-500 focus:outline-none" placeholder="Enter Amount">
+                        </div>
+                        
+                    </form>
+                    <button class="mt-4 btn bg-primary-color text-white hover:bg-yellow-500">Order
+                    </button>
+                </div>
+    
+                <div class="w-auto h-full mt-4">
+                    <img src="images/order-pic.jpg" alt="" class="ring-2 ring-yellow-500 rounded-full transition-transform duration-150 transform hover:scale-110 ease-in-out">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+      <footer>
+        <section class="footer bg-black-in text-white pt-8">
+          <div class="container">
+            <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
+              <li>
+                <div class="space-y-3">
+                  <a href="" class="text-4xl capitalize">
+                    cof<span class="text-primary-color">fee</span>
+                  </a>
+  
+                  <p class="text-xs">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                  </p>
+                </div>
+              </li>
+  
+              <li>
+                <div class="flex flex-col gap-3">
+                  <h3 class="text-xl capitalize text-primary-color">SUPPORT</h3>
+                  <a href="" class="text-xs hover:text-primary-color">FAQ's</a>
+                  <a href="" class="text-xs hover:text-primary-color">Privacy Policy</a>
+                  <a href="" class="text-xs hover:text-primary-color">Term & Condition</a>
+                  <a href="" class="text-xs hover:text-primary-color">Contact</a>
+                </div>
+              </li>
+  
+              <li class="space-y-8">
+                <div class="space-y-2">
+                  <h3 class="text-xl capitalize text-primary-color">phone</h3>
+  
+                  <p class="flex items-center gap-2 text-xs">
+                    <i class="fa-solid fa-phone text-lg text-secondaryColor"></i>
+                    +1 000 000 0000
+                  </p>
+                </div>
+  
+                <div class="space-y-2">
+                  <h3 class="text-xl capitalize text-primary-color">email</h3>
+  
+                  <p class="flex items-center gap-2 text-xs">
+                    <i class="fa-solid fa-envelope text-lg text-secondaryColor"></i>
+                    burger.info@email.com
+                  </p>
+                </div>
+              </li>
+  
+              <li class="space-y-8">
+                <div class="space-y-2">
+                  <h3 class="text-xl capitalize text-primary-color">address</h3>
+  
+                  <p class="flex items-center gap-2 text-xs">
+                    <i class="fa-solid fa-location-dot text-lg text-secondaryColor"></i>
+                    Address goes here
+                  </p>
+                </div>
+  
+                <div class="space-y-2">
+                  <h3 class="text-xl capitalize text-primary-color">follow us</h3>
+  
+                  <div class="space-x-3">
+                    <i class="fa-brands fa-facebook-f text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                    <i class="fa-brands fa-twitter text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                    <i class="fa-brands fa-square-instagram text-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+  
+            <div class="flex flex-col items-center border-t border-primaryColorLight dark:border-brown py-5 md:flex-row md:justify-between">
+              <p class="">Coffee template by Ahbab Sameer</p>
+              <p class="">Copyright © 2024. All rights reserved.</p>
+            </div>
+          </div>
+        </section>
+      </footer>
+
+</body>
+</html>
